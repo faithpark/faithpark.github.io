@@ -1,0 +1,67 @@
+/*CSS DOCUMENT*/
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	}
+
+h3 { 
+	line-height: 0;
+}
+
+h2 {
+	padding-top: 1.5em;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+	}
+
+div.container {
+	max-width: 64em;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	padding: 1em;
+}
+
+header {
+	flex: 1 0 100%;
+	padding: 1em 0;
+}
+
+article {
+	flex: 2 0 32em;
+}
+
+aside {
+	flex: 1 0 16em;
+}
+
+section {
+	background-color: #eeeeee;
+	margin: 0 1em 1em 1em;
+	padding: 1em;
+}
+
+footer {
+	flex: 1 0 100%;
+	border-top: 2px solid #eeeeee;
+}
+
+ol {
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+figure {
+	margin: 0;
+}

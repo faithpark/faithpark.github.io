@@ -1,0 +1,92 @@
+/*CSS DOCUMENT*/
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	}
+	
+div.container {
+        max-width: 40em;
+        margin: 1em;
+        padding: 1em;
+		/* background-color: red; */
+}
+
+/* I have *some* selectors with their declarations in the declaration block. You’ll need more selectors and declaration blocks. */
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+	flex: 1 0 25em;
+	box-sizing: border-box;
+}
+
+ul li {
+	/* border: 3px solid green; */
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: none;
+}
+
+section.order label {
+	flex: 0 0 10em;
+	/* border: 3px dotted orange; */
+}
+
+section label {
+	flex: 1 0 10em;
+}
+
+section {
+    background: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+section p {
+	margin-top: 0;
+}
+
+textarea {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: 6em;
+	background: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	padding: 0.4em;
+	font-family: sans-serif;
+	color: #777;
+	}
+
+
+@media only screen and (min-width: 40em) {
+
+  div.container {
+	/* background-color: purple; */
+    margin: auto;
+  }
+
+   section.method ul, 
+   section.order ul {
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+   section.method ul li,  
+   section.order ul li {
+	flex: 0 0 16em;
+  }
+
+
+}

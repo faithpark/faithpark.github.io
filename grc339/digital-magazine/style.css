@@ -30,7 +30,7 @@ nav {
 }
 
 /* Header*/ 
-h1{
+h1 {
     /* background-color: rgb(255, 35, 20); */
 }
 
@@ -51,7 +51,6 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(20, 60, 100);
     font-family: "oaks", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -61,6 +60,10 @@ nav ul li a {
 
 
 /* Universal Elements */
+nav ul li a, h2 {
+   color: rgb(65, 120, 100);
+}
+
 img {
     width: 100%;
 }
@@ -73,10 +76,10 @@ figcaption {
 footer {
     background-color: rgb(255, 38, 0);
     padding: 1em 0.5em;
-    box-sizing: border-box;
 }
 
 footer p {
+    margin-bottom: 0em;
     color: #ffffff;
 }
 
@@ -96,7 +99,6 @@ section.mainstory, section.secondary {
 }
 
 h2 {
-    color: rgb(20, 60, 100);
     font-family: "oaks", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -104,6 +106,10 @@ h2 {
 
 .mainstory h2, article h2 {
     font-size: 2.25em;
+}
+
+.mainstory h2 {
+    padding: 0.5em 0;
 }
 
 .secondary {
@@ -122,7 +128,7 @@ h2 {
 
 
 .tertiary {
-    border-bottom: solid 1.5px rgb(255, 38, 42);
+    border-bottom: solid 1.5px rgb(10, 16, 16);
     padding: 0em 0.5em;
     /* background-color: rgb(200, 255, 240); */
 }
@@ -161,6 +167,12 @@ nav.gallery-nav {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2px;
 }
+
+nav.gallery-nav img{
+    width: 100%;
+    height: 100%;
+}
+
 
 input {
     display: none;
@@ -238,40 +250,42 @@ button {
         grid-column: 1/4;
         display: flex;
         flex-direction: column;
+        margin-bottom: 0.5em;
     }
 
     section.mainstory a {
-        flex: 0 0 10em;
+        flex: 0 0 70%;
         /* background-color: red; */
     }
 
     section.mainstory a figure {
-        flex: 0 0 5em;
+        flex: 0 0 100%;
         display: flex;
     }
 
     section.mainstory a h2 {
-        flex: 0 0 1em;
+        flex: 0 0 100%;
     }
 
     section.mainstory a p {
-        flex: 0 0 4em;
+        flex: 0 0 100%;
     }
 /*  */
 
 /* Secondary */
     section.secondary {
         display: flex;
+        margin-bottom: 0.5em;
     }
 
     section.secondary a {
-        flex: 1 0 12em;
+        flex: 1 0 100%;
         display: flex;
         flex-direction: column;
     }
 
     section.socondary a figure {
-        flex: 1 0 12em;
+        flex: 1 0 100%;
         display: flex;
     }
 
@@ -284,7 +298,7 @@ button {
     }
 
     section.secondary a p {
-        flex: 0 0 4em;
+        flex: 0 0 2em;
     }
 /*  */
 
@@ -301,12 +315,12 @@ button {
 
 @media screen and (prefers-color-scheme: dark){
 
+    .tertiary {
+        border-bottom: solid 1.5px rgb(255, 38, 0);
+    }
+    
     p, label {
         color: rgb(255, 255, 255);
-    }
-
-    h2, nav ul li a{
-        color: rgb(20, 100, 90);
     }
 
     h1{
@@ -320,7 +334,7 @@ button {
     }
 
     body {
-        background-color: rgb(15, 20, 20);
+        background-color: rgb(10, 16, 16);
     }
 
     .info, .newsletter-options {
@@ -329,4 +343,13 @@ button {
     margin-bottom: 1em;
     }
 
+    nav ul li a, h2 {
+        color: rgb(119 179 157);
+    }
+
+    figcaption {
+        color: rgb(255, 255, 255)
+    }
+
 }
+
